@@ -3,60 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поддержка при невынашивании беременности</title>
-    <!-- Подключение файла CSS -->
-    <link rel="stylesheet" href="design.css">
+    <title>Забота о здоровье матери и ребенка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .img-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .img-section img {
+            width: 30%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .social-links {
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-top: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
-    <!-- Шапка сайта -->
     <header>
-        <div class="container">
-            <h1>Поддержка при невынашивании беременности</h1>
-            <p>Информация и ресурсы для женщин, переживающих сложности с беременностью.</p>
-        </div>
+        <h1>Поддержка здоровья матери и ребенка</h1>
+        <p>Мы предлагаем услуги по диагностике и лечению для будущих мам</p>
     </header>
 
-    <!-- Основной контент -->
-    <main>
-        <div class="container">
-            <!-- Раздел статей -->
-            <section id="articles">
-                <h2>Интересные статьи</h2>
-                <ul>
-                    <li><a href="#">Причины невынашивания и как их предотвратить</a></li>
-                    <li><a href="#">Поддержка женщин после выкидыша</a></li>
-                    <li><a href="#">Восстановление после потери беременности</a></li>
-                </ul>
-            </section>
+    <main class="container">
+        <section>
+            <h2>Полезные статьи</h2>
+            <ul>
+                <li><a href="#">Как подготовиться к беременности?</a></li>
+                <li><a href="#">Причины невынашивания беременности</a></li>
+                <li><a href="#">Поддержка здоровья матери в первые месяцы</a></li>
+            </ul>
+        </section>
 
-            <!-- Раздел библиотеки -->
-            <section id="library">
-                <h2>Библиотека материалов</h2>
-                <p>Наша библиотека включает статьи и исследования. Вы можете скачать материалы:</p>
-                <ul>
-                    <li><a href="#">Гормональные проблемы и невынашивание</a></li>
-                    <li><a href="#">Диеты для предотвращения выкидышей</a></li>
-                    <li><a href="#">Истории успешного преодоления потерь</a></li>
-                </ul>
-            </section>
+        <section>
+            <h2>Библиотека материалов</h2>
+            <ul>
+                <li><a href="#">Скачать руководство для будущих мам</a></li>
+                <li><a href="#">Видео-уроки по здоровью и уходу за ребенком</a></li>
+                <li><a href="#">Справочные материалы по диагностике</a></li>
+            </ul>
+        </section>
 
-            <!-- Социальные ссылки -->
-            <section id="socials">
-                <h2>Присоединяйтесь к нашим сообществам</h2>
-                <p>Присоединяйтесь к нашим активным сообществам поддержки:</p>
-                <ul class="social-links">
-                    <li><a href="https://t.me/your_telegram_group" target="_blank">Наша группа в Telegram</a></li>
-                    <li><a href="https://www.instagram.com/your_instagram_profile" target="_blank">Наш Instagram</a></li>
-                </ul>
-            </section>
-        </div>
+        <section class="img-section">
+            <h2>Наши пациенты</h2>
+            <img src="baby1.jpg" alt="Улыбающийся младенец 1">
+            <img src="baby2.jpg" alt="Улыбающийся младенец 2">
+            <img src="baby3.jpg" alt="Улыбающийся младенец 3">
+        </section>
+
+        <section>
+            <h2>Связаться с нами</h2>
+            <p>Присоединяйтесь к нашему сообществу в социальных сетях:</p>
+            <ul class="social-links">
+                <li><a href="https://t.me/yourtelegramgroup">Telegram</a></li>
+                <li><a href="https://instagram.com/yourinstagramprofile">Instagram</a></li>
+            </ul>
+            <p><button>Записаться на консультацию</button></p>
+        </section>
     </main>
 
-    <!-- Подвал сайта -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Поддержка при невынашивании беременности. Все права защищены.</p>
-        </div>
+        <p>© 2024 Центр заботы о матери и ребенке. Все права защищены.</p>
     </footer>
 </body>
 </html>

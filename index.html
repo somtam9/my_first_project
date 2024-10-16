@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Забота о здоровье матери и ребенка</title>
+    <title>Забота о здоровье 🤰👶</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -60,22 +60,6 @@
             text-decoration: underline;
         }
 
-        .img-section {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .img-section img {
-            width: 30%;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-
-        .social-links {
-            margin: 10px 0;
-        }
-
         button {
             background-color: #007bff;
             color: white;
@@ -89,6 +73,14 @@
             background-color: #0056b3;
         }
 
+        .interactive-button {
+            background-color: #28a745;
+        }
+
+        .interactive-button:hover {
+            background-color: #218838;
+        }
+
         footer {
             text-align: center;
             margin-top: 20px;
@@ -96,53 +88,68 @@
             background-color: #f1f1f1;
             border-top: 1px solid #ddd;
         }
+
+        .emoji {
+            font-size: 2em;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Поддержка здоровья матери и ребенка</h1>
-        <p>Мы предлагаем услуги по диагностике и лечению для будущих мам</p>
+        <h1>Поддержка здоровья матери и ребенка 🤱</h1>
+        <p>Мы заботимся о будущем с первых шагов 👶❤️</p>
     </header>
 
     <main class="container">
         <section>
-            <h2>Полезные статьи</h2>
+            <h2>Полезные статьи 📚</h2>
             <ul>
-                <li><a href="#">Как подготовиться к беременности?</a></li>
-                <li><a href="#">Причины невынашивания беременности</a></li>
-                <li><a href="#">Поддержка здоровья матери в первые месяцы</a></li>
+                <li><a href="#">Как подготовиться к беременности? 🤔</a></li>
+                <li><a href="#">Причины невынашивания беременности 💔</a></li>
+                <li><a href="#">Поддержка здоровья матери в первые месяцы 💪</a></li>
             </ul>
         </section>
 
         <section>
-            <h2>Библиотека материалов</h2>
+            <h2>Библиотека материалов 📖</h2>
             <ul>
-                <li><a href="#">Скачать руководство для будущих мам</a></li>
-                <li><a href="#">Видео-уроки по здоровью и уходу за ребенком</a></li>
-                <li><a href="#">Справочные материалы по диагностике</a></li>
+                <li><a href="#">Скачать руководство для будущих мам 📝</a></li>
+                <li><a href="#">Видео-уроки по уходу за ребенком 🎥</a></li>
+                <li><a href="#">Справочные материалы по диагностике 🩺</a></li>
             </ul>
         </section>
 
-        <section class="img-section">
-            <h2>Наши пациенты</h2>
-            <img src="baby1.jpg" alt="Улыбающийся младенец 1">
-            <img src="baby2.jpg" alt="Улыбающийся младенец 2">
-            <img src="baby3.jpg" alt="Улыбающийся младенец 3">
-        </section>
-
         <section>
-            <h2>Связаться с нами</h2>
-            <p>Присоединяйтесь к нашему сообществу в социальных сетях:</p>
+            <h2>Связаться с нами 📞</h2>
+            <p>Присоединяйтесь к нашему сообществу в соцсетях:</p>
             <ul class="social-links">
-                <li><a href="https://t.me/yourtelegramgroup">Telegram</a></li>
-                <li><a href="https://instagram.com/yourinstagramprofile">Instagram</a></li>
+                <li><a href="https://t.me/yourtelegramgroup">Telegram 📲</a></li>
+                <li><a href="https://instagram.com/yourinstagramprofile">Instagram 📸</a></li>
             </ul>
-            <p><button>Записаться на консультацию</button></p>
+            <p><button onclick="alert('Спасибо за обращение! Мы свяжемся с вами скоро! 😊')" class="interactive-button">Записаться на консультацию</button></p>
+        </section>
+
+        <section>
+            <h2>Интерактивные элементы 🎮</h2>
+            <p>Нажми на кнопку, чтобы увидеть секретное сообщение:</p>
+            <button onclick="displaySecret()" class="interactive-button">Показать секрет 🤫</button>
+            <p id="secretMessage" style="display:none;">Вы замечательная будущая мама! 💖</p>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Центр заботы о матери и ребенке. Все права защищены.</p>
+        <p>© 2024 Центр заботы о матери и ребенке. Все права защищены. 🛡️</p>
     </footer>
+
+    <script>
+        function displaySecret() {
+            const secretMessage = document.getElementById('secretMessage');
+            if (secretMessage.style.display === "none") {
+                secretMessage.style.display = "block";
+            } else {
+                secretMessage.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
